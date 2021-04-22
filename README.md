@@ -1,5 +1,5 @@
   
-# Decentralized Finance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [<img src="https://raw.githubusercontent.com/michael-spengler/decentralized-finance/main/logo-v2.svg" alt="drawing" width="200"/>](https://www.npmjs.com/package/decentralized-finance-defi)
+# Decentralized Finance 
 This package provides distributed ledger based banking features like payments, deposits, loans and automated investment patterns.
 
 Connect your TypeScript based projects with smart contracts on the Ethereum Blockchain by checking the usage examples below.
@@ -10,7 +10,6 @@ This package shall increase freedom for those who increase freedom. As such it s
 
 ## Usage Examples
 
-### [Payments](https://github.com/michael-spengler/decentralized-finance/wiki#feature-areas)
 #### Transfer Ether
 ```ts
 require('dotenv').config() // this ensures process.env. ... contains your .env file configuration values
@@ -25,8 +24,6 @@ const senderPrivateKey = process.env.SENDER_WALLET_PRIVATE_KEY
 await DeFiService.transferEther(fromWalletAddress, toWalletAddress, amountInETH, senderPrivateKey)
 
 ```
-
-### [Deposits](https://github.com/michael-spengler/decentralized-finance/wiki#feature-areas)
 
 #### Deposit Ether to Compound
 You can also test this feature via the [compound.finance](https://compound.finance) user interface.
@@ -44,7 +41,6 @@ await DeFiService.depositEtherToCompound(amountOfEtherToBeDeposited, senderWalle
 
 ```
 
-### [Loans](https://github.com/michael-spengler/decentralized-finance/wiki#feature-areas)
 #### Borrow Ether from Compound
 You can also test this feature via the [compound.finance](https://compound.finance) user interface.
 ```ts
@@ -80,7 +76,6 @@ await DeFiService.redeemAssetFromCompound(walletAddress,  walletPrivateKey, gasL
 ```
 
 
-### [Account Management](https://github.com/michael-spengler/decentralized-finance/wiki#feature-areas)
 #### Get Compound Account Data
 You can also test this feature via the [compound.finance](https://compound.finance) user interface.
 ```ts
@@ -93,7 +88,6 @@ console.log(`The collateral value in ETH is: ${accountInfo.total_collateral_valu
 
 ```
 
-### [Exchange Features](https://github.com/michael-spengler/decentralized-finance/wiki#feature-areas)
 #### Swap DAI to Ether via Uniswap
 You can also test this feature via the [uniswap.org](https://uniswap.org) user interface.
 ```ts
@@ -110,7 +104,6 @@ await DeFiService.swapDAIToETH(amountOfDAIToBeSwapped, walletAddress, walletPriv
 
 ```
 
-### [Leverage Investing](https://github.com/michael-spengler/decentralized-finance/wiki#feature-areas)
 #### Get account info from DyDx.exchange
 You can also test this feature via the [dydx.exchange](https://dydx.exchange/) user interface.
 ```ts
@@ -127,7 +120,6 @@ console.log(result)
 
 ```
 
-### [Neural Networks](https://github.com/michael-spengler/decentralized-finance/wiki#feature-areas)
 #### Explore FeedForward Neural Nets with Backpropagation
 ```ts
 
@@ -138,7 +130,6 @@ DeFiService.charterATrader() // observe the console output
 
 ```
 
-### [Crypto Currency Insights](https://github.com/michael-spengler/decentralized-finance/wiki#feature-areas)
 #### Get Price Data with Timestamp from Coinmarketcap (API Key Required)
 You can compare the results via the [coinmarketcap.com](https://coinmarketcap.com) user interface.
 ```ts
@@ -153,7 +144,6 @@ console.log(pricesWithTimeStamp[1])
 
 ```
 
-### [Distributed Ledger Insights](https://github.com/michael-spengler/decentralized-finance/wiki#feature-areas)
 #### Get Current Gas Price Info
 
 ```ts
@@ -166,26 +156,10 @@ console.log(gasPriceInfo.fastest)
 
 ## Further Features
 
-You can find further examples in the [DeFi Service](https://github.com/michael-spengler/decentralized-finance/blob/main/src/defi.service.ts) file. If you are looking for anything more specific, feel free to check the corresponding folders and class definitions within the [src](https://github.com/michael-spengler/decentralized-finance/tree/main/src) folder.
-
-If you have not found what you are looking for, feel free to [raise an issue](https://github.com/michael-spengler/decentralized-finance/issues/new) or even better raise a Pull Request. 
-
+You can find further examples in the [DeFi Service](https://github.com/orionstardust/mDefi/blob/main/src/defi.service.ts) file. If you are looking for anything more specific, feel free to check the corresponding folders and class definitions within the [src](https://github.com/orionstardust/mDefi/tree/main/src) folder.
 
 ## Smart Contract Development
-You can find some simple examples for solidity based smart contract development projects within the [smart-contracts-development](https://github.com/michael-spengler/decentralized-finance/tree/main/src/smart-contracts-development) folder.
-
-
-## General Recommendations
-You might also check [aave.com](https://aave.com/), [klopapier.exchange](https://toiletpaper.eth.link/) and [compound.finance](https://compound.finance). If you want to get a general overview on DeFi Services, you might check the [defipulse.com](https://defipulse.com/).
-
-## Distributed Domain Name Services
-To provide your user interfaces in a sustainable way you might check [ens.domains](https://ens.domains). If you want to try it, you might check [this tutorial](https://www.youtube.com/watch?v=oA4oOY5zgU0).
-
-## Blockchain based Deployments
-For Permaweb deployments you might check [argoapp.live](https://argoapp.live). I tested it for a vuejs frontend project. It works pretty straight forward already. If you are in general a fan of the decentralized web (dWeb), you might also check the new (2021) [IPFS browser standard](https://brave.com/brave-integrates-ipfs/).
-
-## Fund Contributions
-If you see an issue in the DeFi space which you want to see solved, consider funding the solution via [gitcoin.co](https://gitcoin.co).
+You can find some simple examples for solidity based smart contract development projects within the [smart-contracts-development](https://github.com/orionstardust/mDefi/tree/main/src/smart-contracts-development) folder.
 
 ## OpenBits based Open Source Incentive Engineering
 With this package we also explore the features of [openbits.world](https://openbits.world).  
@@ -201,13 +175,8 @@ https://openbits.world/#/explore-openbit/decentralized-finance-defi
 I prepared [the corresponding Deno module](https://deno.land/x/defi) and wait until the dependencies of the package at hand are ready for [Deno](https://deno.land) resp. [nest.land](https://nest.land).
 
 
-## GDPR related Data Privacy
-In order to comply to general data protection guidelines, you might consider providing built in transaction anonymization as a service to your users.  
-One option to do so is described in [this tutorial](https://www.youtube.com/watch?v=Dv9jiOc8kOY) leveraging [tornadocash.eth.link](https://tornadocash.eth.link/).  
-Depending on your specific jurisdiction you might check [tornadocash.eth.link/compliance](https://tornadocash.eth.link/compliance).
-
 ## Security
-See [Security Policy](https://github.com/michael-spengler/decentralized-finance/blob/main/SECURITY.md).
+See [Security Policy](https://github.com/orionstardust/mDefi/blob/main/SECURITY.md).
 
 ### Protect against Postinstall Exploits
 To be on the safe side even if a dependency of a dependency of a dependency .... tries to exploit the [potential postinstall weak spot]([here](https://github.com/michael-spengler/decentralized-finance/issues/2)) we recommend to adhere to the following pattern: 
@@ -216,17 +185,3 @@ npm config set ignore-scripts true
 npm install
 npm config set ignore-scripts false
 ```
-
-
-## Reference Projects
-Some of the most famous projects using this package 
-[<img src="https://user-images.githubusercontent.com/43786652/106395210-475db300-6401-11eb-857a-492c52b1c837.jpg" alt="drawing" width="200"/>](https://toiletpaper.eth.link)
-
-## Philosophy
-This package shall increase freedom for those who increase freedom. Actions of the weak shall be private. Actions of the powerful shall be transparent.
-
-## Support our Open Source Contributions
-If you like our work, you might download the Brave Browser via our
-promotion link: [https://brave.com/fan464](https://brave.com/fan464) and enjoy the new (2021) [IPFS browser standard](https://brave.com/brave-integrates-ipfs/).
-
-![![](https://brave.com/)](https://brave.com/wp-content/uploads/2019/01/logotype-full-color.svg)
