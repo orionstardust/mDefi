@@ -167,21 +167,3 @@ If you want to support this adventure, consider installing the package via:
 ```sh
 openbits install decentralized-finance-defi
 ```
-You can find background information on that via:   
-https://openbits.world/#/explore-openbit/decentralized-finance-defi
-
-
-## Deno based DeFi
-I prepared [the corresponding Deno module](https://deno.land/x/defi) and wait until the dependencies of the package at hand are ready for [Deno](https://deno.land) resp. [nest.land](https://nest.land).
-
-
-## Security
-See [Security Policy](https://github.com/orionstardust/mDefi/blob/main/SECURITY.md).
-
-### Protect against Postinstall Exploits
-To be on the safe side even if a dependency of a dependency of a dependency .... tries to exploit the [potential postinstall weak spot]([here](https://github.com/michael-spengler/decentralized-finance/issues/2)) we recommend to adhere to the following pattern: 
-```sh
-npm config set ignore-scripts true
-npm install
-npm config set ignore-scripts false
-```
